@@ -17,7 +17,9 @@ def call_b2c_service(data):
     settings = Settings(strict=False, xml_huge_tree=True)
     client = Client(wsdl=WSDL_TEST_URL, transport=Transport(session=session), settings=settings)
 
-    # Construct the SOAP request body
+
+    # The SOAP request body
+    
     request_data = {
         'api:Request': {
             'req:Header': {
