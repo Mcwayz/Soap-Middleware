@@ -1,6 +1,7 @@
-# myapp/serializers.py
+# SOAP/serializers.py
 
 from rest_framework import serializers
+
 
 class B2CRequestSerializer(serializers.Serializer):
     CommandID = serializers.CharField(max_length=100)

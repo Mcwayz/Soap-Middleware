@@ -1,11 +1,20 @@
-# myapp/soap_client.py
+# SOAP/soap_client.py
+
 
 from zeep import Client, Settings
 from zeep.transports import Transport
 from requests import Session
 
+
+# Request Endpoint 
+
+
 WSDL_TEST_URL = 'http://172.18.2.135:7661/payment/services/APIRequestMgrService?wsdl'
 WSDL_PROD_URL = 'http://172.18.0.133:7661/payment/services/APIRequestMgrService?wsdl'
+
+
+# Business to Customer Service Function 
+
 
 def call_b2c_service(data):
     session = Session()

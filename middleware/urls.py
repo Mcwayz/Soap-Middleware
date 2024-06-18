@@ -1,4 +1,4 @@
-# myapp/urls.py
+# SOAP/urls.py
 
 from django.urls import path
 from .views import b2c_request_view
